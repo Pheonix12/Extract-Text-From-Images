@@ -1,4 +1,7 @@
-import pathlib, os, io, uuid, pytesseract
+import pathlib
+import os
+import io
+import uuid
 from functools import lru_cache
 from fastapi import(
     FastAPI,
@@ -9,6 +12,7 @@ from fastapi import(
     File,
     UploadFile
     )
+import pytesseract
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseSettings
